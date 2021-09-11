@@ -1,22 +1,30 @@
-# Factorio.ModTemplate
-Template for automated mod deployment using Github Actions when a tagged commit is pushed
+# Factorio.RCONCompanion
+Companion mod for some RCON commands to avoid disabling achievements while using RCON
 
-## Inputs (Github secrets)
+Availiable commands:
+- /rcon print_tick
+- /rcon print_gamespeed
+- /rcon print_tickpaused
 
-### `factorio_user`
-
-**Required** User that will be used to authenticate to the Factorio mod-portal.
-
-### `factorio_password`
-
-**Required** Password that will be used to authenticate to the Factorio mod-portal.
-
-## Acknowledgements
-
-Actions based on:
-- [Roang-zero1 Actions](https://github.com/Roang-zero1)
-
-Which are  based on:
-- [Nexelas Mods](https://github.com/Nexela)
-- [GitHub Action to automatically publish to the Factorio mod portal](https://github.com/shanemadden/factorio-mod-portal-publish)
-- Shane Madden (Nymbia)
+Example Usecase:
+```
+def getClusterUPS(self,clustername,timeframe = 5):
+	try:
+		clusterIP = self.getClusterIP(clustername)
+		con = rCon(clusterIP,self.clusterCfg.rConPassword)
+		paused = bool((con.execute('/rcon print_tickpaused')) == "true")
+		if paused:
+			print("Server is paused, no UPS stats avaliable")
+		else:
+			speed = round(float(con.execute('/rcon print_gamespeed')),3)
+			tick_1 = int(con.execute('/rcon print_tick'))
+			time.sleep(timeframe)
+			tick_2 = int(con.execute('/rcon print_tick'))
+			server_ups = (tick_2-tick_1)/timeframe
+			game_ups = (speed*60)
+			perf = int(round(server_ups / game_ups,2)*100)
+			print("Server UPS: {0}, Expected Game UPS: {1} (Speed = {2}), Performance = {3}%".format(server_ups, game_ups, speed, perf))
+	except:
+		print("error, check logs")
+		logging.exception('')
+```

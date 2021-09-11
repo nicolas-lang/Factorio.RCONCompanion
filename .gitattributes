@@ -1,4 +1,5 @@
 .gitattributes export-ignore
 .gitignore export-ignore
 .github export-ignore
+icon.svg export-ignore
 Readme.md export-ignore

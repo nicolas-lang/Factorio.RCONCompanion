@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="icon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.5001964"
+     inkscape:cx="272.29768"
+     inkscape:cy="228.97002"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect31"
+       width="80"
+       height="80"
+       x="0.5"
+       y="0.5"
+       rx="10"
+       ry="10"
+       inkscape:export-filename="C:\Daten\NextCloud\Coden\Factorio\Factorio-Repos\Factorio.RCONCompanion\thumbnail.png"
+       inkscape:export-xdpi="37.629631"
+       inkscape:export-ydpi="37.629631" />
+    <rect
+       style="fill:#ac9d93;fill-opacity:1;stroke:none;stroke-width:1.0506;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect517"
+       width="70"
+       height="60"
+       x="5"
+       y="15"
+       ry="5"
+       rx="5"
+       inkscape:export-filename="C:\Daten\NextCloud\Coden\Factorio\Factorio-Repos\Factorio.RCONCompanion\thumbnail.png"
+       inkscape:export-xdpi="37.629631"
+       inkscape:export-ydpi="37.629631" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:30.7332px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.768331"
+       x="6.1021519"
+       y="36.021358"
+       id="text1791"
+       transform="scale(0.9645416,1.0367619)"
+       inkscape:export-filename="C:\Daten\NextCloud\Coden\Factorio\Factorio-Repos\Factorio.RCONCompanion\thumbnail.png"
+       inkscape:export-xdpi="37.629631"
+       inkscape:export-ydpi="37.629631"><tspan
+         sodipodi:role="line"
+         id="tspan1789"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:30.7332px;font-family:Consolas;-inkscape-font-specification:'Consolas, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.768331"
+         x="6.1021519"
+         y="36.021358">&gt;_</tspan></text>
+  </g>
+</svg>
