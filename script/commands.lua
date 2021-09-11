@@ -14,7 +14,7 @@ commands.add_command("rcon", nil, function(command)
 		msg = game.tick_paused
 	end
 	
-	if command.player_index ~= nil 
+	if command.player_index ~= nil then
 		game.get_player(command.player_index).print(command.parameter .. ": " .. tostring(msg))
 	else:
 		rcon.print(msg)
