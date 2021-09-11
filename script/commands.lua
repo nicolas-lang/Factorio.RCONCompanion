@@ -4,7 +4,7 @@
 commands.add_command("rcon", nil, function(command)
 	local reply
 	local parameter = command.parameter
-	if (parameter) then 
+	if (parameter) then
 		--check action
 		if (parameter == "print_tick") then
 			reply = command.tick
