@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------------
 local function csv_split(str, separator)
 	local result = {}
-	if separator then
+	if (separator and str) then
 		local pattern = "([^" .. separator .. "]+)"
 		if str then
 			for word in string.gmatch(str, pattern) do
@@ -13,17 +13,17 @@ local function csv_split(str, separator)
 end
 -------------------------------------------------------------------------------------
 local function tLen(myTable)
-	numItems = 0
+	local numItems = 0
 	for _, _ in pairs(myTable) do
 		numItems = numItems + 1
 	end
 	return numItems
 end
 -------------------------------------------------------------------------------------
-function rcon_command(command)
+local function rcon_command(command)
 	local replys = {}
 	if (command.parameter) then
-		parameters = csv_split(command.parameter, " ")
+		local parameters = csv_split(command.parameter, " ")
 		if #parameters > 0 then
 			--check action
 			if (parameters[1] == "print_tick") then

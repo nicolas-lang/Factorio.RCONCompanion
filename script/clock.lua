@@ -16,7 +16,7 @@ script.on_nth_tick(
 		local real_ups = global.real_ups or 60
 		local timeStr = ""
 		if ((e.tick - global.real_time_update) < real_ups * 60 * 6) then
-			-- Update spätestens 6 minuten. Lambda sollte alle 5m laufen, bzw ups annahme sollte nicht zusehr daneben liegen
+			-- Lambda is scheduled every 5m and UPS assumption shouldn't deviate by more than 20%
 			local seconds = math.floor(real_time + (e.tick - real_time_update) / real_ups)
 			timeStr = timeStringFromSeconds(seconds)
 		end
