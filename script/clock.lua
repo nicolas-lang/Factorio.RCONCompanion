@@ -1,5 +1,5 @@
 local function timeStringFromSeconds(seconds)
-	local s = seconds % 60
+	--local s = seconds % 60
 	local minutes = math.floor(seconds / 60)
 	local m = minutes % 60
 	local hours = math.floor(minutes / 60)
