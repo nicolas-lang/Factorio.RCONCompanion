@@ -1,3 +1,8 @@
+# pip install for AWS-lambda
+import os,sys
+os.system('pip install factorio-rcon-py -t /tmp/ --no-cache-dir')
+sys.path.insert(1, '/tmp/')
+
 # main script
 import logging
 import factorio_rcon
