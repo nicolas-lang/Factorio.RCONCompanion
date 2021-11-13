@@ -1,4 +1,8 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.4
+  Changes:
+    - Added/updated clock and clock settings
+---------------------------------------------------------------------------------------------------
 Version: 0.0.3
   Changes:
     - Changed command handling and added ingame clock
