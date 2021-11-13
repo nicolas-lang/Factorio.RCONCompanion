@@ -35,5 +35,5 @@ local function update_clock(e)
 end
 
 if settings.global["nco-RCONCompanion-clock"].value then
-	script.on_nth_tick(20, update_clock(e))
+	script.on_nth_tick(20, update_clock)
 end
