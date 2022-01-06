@@ -5,9 +5,12 @@ Availiable commands:
 - /rcon print_tick
 - /rcon print_gamespeed
 - /rcon print_tickpaused
+- /rcon get_gamestate
+- /rcon set_clock
 
 Example Usecase:
 ```
+#check the aws lambda_function for a complete self-contained rcon example
 def getClusterUPS(self,clustername,timeframe = 5):
 	try:
 		clusterIP = self.getClusterIP(clustername)
