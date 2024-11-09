@@ -9,13 +9,13 @@ local function timeStringFromSeconds(seconds)
 end
 
 local function update_clock(e)
-	local real_time_update = global.real_time_update or 0
+	local real_time_update = storage.real_time_update or 0
 	if game.tick_paused then
-		global.real_time_update = 0
+		storage.real_time_update = 0
 		return
 	end
-	local real_ups = global.real_ups or 60
-	local real_time = global.real_time or 0
+	local real_ups = storage.real_ups or 60
+	local real_time = storage.real_time or 0
 	local timeStr = ""
 	local update_timeout = settings.global["nco-RCONCompanion-clock_update-timeout"].value * 60
 	if ((e.tick - real_time_update) < real_ups * update_timeout) then

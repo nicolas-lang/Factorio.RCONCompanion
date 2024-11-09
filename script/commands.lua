@@ -43,10 +43,10 @@ local function rcon_command(command)
 			end
 			if (parameters[1] == "set_clock") then
 				if (#parameters >= 2) then
-					global.real_time = parameters[2]
-					global.real_time_update = command.tick
+					storage.real_time = parameters[2]
+					storage.real_time_update = command.tick
 					if (#parameters == 3) then
-						global.real_ups = parameters[3]
+						storage.real_ups = parameters[3]
 					end
 					replys["game.tick_paused"] = game.tick_paused
 					replys["game.speed"] = game.speed
