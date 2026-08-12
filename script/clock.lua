@@ -1,3 +1,4 @@
+-- luacheck: globals storage
 local function timeStringFromSeconds(seconds)
 	--local s = seconds % 60
 	local minutes = math.floor(seconds / 60)

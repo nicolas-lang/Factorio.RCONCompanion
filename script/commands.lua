@@ -1,3 +1,5 @@
+-- luacheck: globals storage
+-- luacheck: read_globals rcon
 -------------------------------------------------------------------------------------
 local function csv_split(str, separator)
 	local result = {}
