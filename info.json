@@ -1,12 +1,12 @@
 {
 	"name": "nco-RCONCompanion",
-	"version": "2.0.0",
+	"version": "2.1.0",
 	"title": "RCON Companion",
 	"author": "Karoschl",
 	"contact": "",
 	"homepage": "",
 	"description": "Companion Mod for running specific RCON commands without disabling achievements",
-	"factorio_version": "2.0",
+	"factorio_version": "2.1",
 	"dependencies": [
 		"base"
 	]
